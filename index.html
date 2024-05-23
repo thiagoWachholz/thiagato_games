@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thiagato Games</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header class="navbar navbar-expand-lg sticky-top pt-3" id="cabecalho">
+        <div class="container">
+            <h1 class="navbar-brand title m-0">Thiagato <span class="text-green">Games</span></h1>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="#sobre">
+                            <i class="bi bi-info-square"></i>
+                            Sobre
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="#plataformas">
+                            <i class="bi bi-joystick"></i>
+                            Plataformas
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="#games">
+                            <i class="bi bi-controller"></i>
+                            Games
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="#contato">
+                            <i class="bi bi-chat-left-dots"></i>
+                            Contato
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">
+        <section id="sobre">
+            <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="images/slides/slide-1.png" class="w-100" alt="">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="images/slides/slide-2.png" class="w-100" alt="">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="images/slides/slide-3.png" class="w-100" alt="">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" class="active" data-bs-target="#carousel" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                </div>
+            </div>
+            <div class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="images/loja.png" class="d-block w-100 rounded" alt="">
+                        </div>
+                        <div class="col-md-7">
+                            <h2 class="title mt-5 mt-md-0">Sobre a <span class="text-blue">Loja</span></h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio nemo laborum iure, sed numquam libero voluptatibus pariatur quisquam laboriosam ipsam est excepturi cumque asperiores tempore ab odio aspernatur, quia dolorum!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="plataformas">
+            <div class="container">
+                <div class="row pt-3">
+                    <h2 class="title text-blue text-center mb-3">Plataformas</h2>
+                </div>
+                <div class="row pb-3">
+                    <div class="col-md-4">
+                        <img src="images/logos/playstation.png" class="d-block w-100 rounded" alt="">
+                        <h3 class="title text-center mt-2">Playstation</h3>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="images/logos/xbox.png" class="d-block w-100 rounded" alt="">
+                        <h3 class="title text-center mt-2">Xbox</h3>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="images/logos/nintendo.png" class="d-block w-100 rounded" alt="">
+                        <h3 class="title text-center mt-2">Nintendo</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="games">
+            <div class="container">
+                <div class="row">
+                    <h2 class="title text-center text-blue pt-5">Games</h2>
+                </div>
+                <div class="row pt-5 pb-5">
+                    <aside class="col-md-2">
+                        <nav class="nav nav-pills flex-column nav-jogos">
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#playstation" class="text-start nav-link text-blue active">Playstation</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#xbox" class="text-start nav-link text-blue">Xbox</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#nintendo" class="text-start nav-link text-blue">Nintendo</button>
+                        </nav>
+                    </aside>
+                    <div class="col-md-10">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="playstation">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img src="images/jogos/days-gone.jpg" class="rounded w-100 d-block" alt="">
+                                        <h5 class="text-blue title mt-2">Days Gone</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="images/jogos/god-of-war.png" class="rounded w-100 d-block" alt="">
+                                        <h5 class="text-blue title mt-2">God of War</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="images/jogos/horizon-zero-dawn.jpg" class="rounded w-100 d-block" alt="">
+                                        <h5 class="text-blue title mt-2">Horizon Zero Dawn</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="images/jogos/nioh2.jpg" class="rounded w-100 d-block" alt="">
+                                        <h5 class="text-blue title mt-2">Nioh 2</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="images/jogos/ghost-of-tsushima.jpg" class="rounded w-100 d-block" alt="">
+                                        <h5 class="text-blue title mt-2">Ghost of Tsushima</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="xbox">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img src="images/jogos/forza-4.jpg" class="rounded w-100 d-block" alt="">
+                                        <h5 class="text-green title mt-2">Forza 4</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="images/jogos/forza-m.png" class="rounded w-100 d-block" alt="">
+                                        <h5 class="text-green title mt-2">Forza Motorsport</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="images/jogos/gears-of-war.jpg" class="rounded w-100 d-block" alt="">
+                                        <h5 class="text-green title mt-2">Gears of War</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="images/jogos/halo.webp" class="rounded w-100 d-block" alt="">
+                                        <h5 class="text-green title mt-2">Halo</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="images/jogos/hades.webp" class="rounded w-100 d-block" alt="">
+                                        <h5 class="text-green title mt-2">Hades</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="nintendo">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img src="images/jogos/dk-64.jpg" class="rounded w-100 d-block" alt="">
+                                        <h5 class="text-red title mt-2">Donkey Kong 64</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="images/jogos/mario-kart-8.jpg" class="rounded w-100 d-block" alt="">
+                                        <h5 class="text-red title mt-2">Mario Kart 8</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="images/jogos/mario-odyssey.jpg" class="rounded w-100 d-block" alt="">
+                                        <h5 class="text-red title mt-2">Mario Odyssey</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="images/jogos/sm-3d-world.jpg" class="rounded w-100 d-block" alt="">
+                                        <h5 class="text-red title mt-2">Super Mario 3D World</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="images/jogos/zelda-breath.jpg" class="rounded w-100 d-block" alt="">
+                                        <h5 class="text-red title mt-2">The Legend of Zelda: Breath of the Wild</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="images/jogos/zelda-links.png" class="rounded w-100 d-block" alt="">
+                                        <h5 class="text-red title mt-2">The Legend of Zelda: Link's Awakening</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contato" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="text-blue title text-center">Contato</span></h2>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-md-7 mb-5">
+                        <form action="">
+                            <div class="mb-3">
+                                <label for="nome" class="form-label fw-bold text-colored">Nome:</label>
+                                <input type="text" id="nome" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label fw-bold text-colored">E-mail:</label>
+                                <input type="email" id="email" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefone" class="form-label fw-bold text-colored">Telefone (Opcional):</label>
+                                <input type="telefone" id="telefone" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensagem" class="form-label fw-bold text-colored">Mensagem:</label>
+                                <textarea id="mensagem" class="form-control" required></textarea>
+                            </div>
+                            <button type="button" class="btn fw-bold">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="row">
+                            <h3 class="title fs-4 text-blue">
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                Redes sociais
+                            </h3>
+                            <ul class="social-links">
+                                <li class="fs-5"><a href="#">
+                                    <i class="bi text-blue bi-facebook"></i>
+                                </a></li>
+                                <li class="fs-5 ms-1 me-1"><a href="#">
+                                    <i class="bi text-blue bi-instagram"></i>
+                                </a></li>
+                                <li class="fs-5"><a href="#">
+                                    <i class="bi text-blue bi-whatsapp"></i>
+                                </a></li>
+                            </ul>
+                        </div>
+                        <div class="row mt-4">
+                            <h3 class="title fs-4 text-blue">
+                                <i class="bi bi-cursor-fill"></i>
+                                Endereço
+                            </h3>
+                            <p>Rua Teste Exemplo, n°123 | Bairro do Bonito | Camaqua - RS</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+<script src="lib/bootstrap.bundle.min.js"></script>
+</html>

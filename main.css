@@ -1,0 +1,75 @@
+body {
+    font-family: Roboto, sans-serif;
+}
+
+.title {
+    font-family: 'Poetsen One', sans-serif;
+}
+
+#cabecalho h1.navbar-brand.title {
+    font-size: 1.8em;
+}
+
+.navbar {
+    background-color: #472DFA;
+}
+
+#cabecalho .nav .nav-link.active {
+    background-color: #fff;
+    color: #472DFA;
+}
+
+#cabecalho .nav .nav-link,
+#cabecalho .navbar-brand,
+#cabecalho .navbar-brand:hover,
+.nav-jogos .nav-link.active:hover {
+    color: #fff;
+}
+
+.navbar-toggler {
+    background-color: #fff;
+    color: #472DFA;
+}
+
+#sobre, #games {
+    background-color: #e7e7e7;
+}
+
+.text-green {
+    color: #32FC41;
+}
+
+.text-red {
+    color: red;
+}
+
+.text-blue {
+    color: #472DFA;
+}
+
+.nav-jogos .nav-link.active {
+    background-color: #472DFA;
+    color: #fff;
+}
+
+.nav-jogos .nav-link:hover {
+    color: #472DFA;
+}
+
+.social-links li {
+    list-style: none;
+    display: inline;
+}
+
+.social-links a {
+    text-decoration: none;
+}
+
+#mensagem {
+    resize: none;
+}
+
+#contato button {
+    background-color: #472DFA;
+    color: #fff;
+}
